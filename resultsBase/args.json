@@ -1,0 +1,21 @@
+{
+    "adamEps": 1e-08,
+    "saveInterval": 10000,
+    "cocoVariant": "2014",
+    "name": "results/",
+    "resume": null,
+    "mergeValidationSet": 1,
+    "displayInterval": 60,
+    "learningRate": 0.0001,
+    "dataset": "Dataset/coco",
+    "profile": 0,
+    "hardMining": 1,
+    "optimizer": "adam",
+    "randZoom": 1,
+    "report": "",
+    "freezeBatchNorm": 1,
+    "gpu": "0",
+    "reportInterval": 30,
+    "trainFrom": "-1",
+    "export": null
+}
