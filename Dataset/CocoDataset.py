@@ -31,7 +31,7 @@ class CocoDataset:
 		self.randomZoom=randomZoom
 
 	def init(self):
-		self.coco=coco.COCO(self.path+"/annotations/instances_"+self.set+".json")
+		self.coco=coco.COCO(self.path+"/annotations/result.json")
 		self.images=self.coco.getImgIds()
 
 		self.toCocoCategory=[]
@@ -71,11 +71,12 @@ class CocoDataset:
 			if len(crowd)>0:
 				continue;
 
-			imgFile=self.path+"/"+self.set+"/"+self.coco.loadImgs(imgId)[0]["file_name"]
+			imgFile=self.path+"/"+self.coco.loadImgs(imgId)[0]["file_name"]
+			imgFile = imgFile.replace("\\","/")
 			img = cv2.imread(imgFile)
 
 			if img is None:
-				print("ERROR: Failed to load "+imgFile)
+				print("ERROR: Dupa Failed to load "+imgFile)
 				continue
 
 			sizeMul = 1.0

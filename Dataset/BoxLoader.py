@@ -45,7 +45,7 @@ class BoxLoader:
 		self.sources=sources[:]
 	
 	def categoryCount(self):
-		return 80
+		return 6
 	
 	def threadFn(self, tid, sess):
 		if tid==0:

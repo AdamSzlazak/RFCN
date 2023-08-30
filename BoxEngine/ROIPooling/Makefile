@@ -1,7 +1,7 @@
-CUDA_HOME?=$(shell dirname `dirname \`which nvcc\``)
+CUDA_HOME=$ /usr/local/cuda-12.2
 CUDA_INC := ${CUDA_HOME}/include
 NVCC := ${CUDA_HOME}/bin/nvcc
-ARCH?=sm_37
+ARCH?=sm_50
 CXXFLAGS:=-std=c++11 -O2 -D GOOGLE_CUDA=1
 PYTHON?=$(shell which python)
 TF_INC?=$(shell ${PYTHON} -c 'import tensorflow as tf; print(tf.sysconfig.get_include())')

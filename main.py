@@ -34,7 +34,7 @@ parser.add_argument('-resume', type=str, help='Resume from this file', save=Fals
 parser.add_argument('-report', type=str, default="", help='Create report here', save=False)
 parser.add_argument('-trainFrom', type=str, default="-1", help='Train from this layer. Use 0 for all, -1 for just the added layers')
 parser.add_argument('-hardMining', type=int, default=1, help="Enable hard example mining.")
-parser.add_argument('-gpu', type=str, default="0", help='Train on this GPU(s)')
+parser.add_argument('-gpu', type=str, default="1", help='Train on this GPU(s)')
 parser.add_argument('-mergeValidationSet', type=int, default=1, help='Merge validation set to training set.')
 parser.add_argument('-profile', type=int, default=0, help='Enable profiling', save=False)
 parser.add_argument('-randZoom', type=int, default=1, help='Enable box aware random zooming and cropping')
