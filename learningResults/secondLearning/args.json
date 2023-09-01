@@ -1,0 +1,21 @@
+{
+    "report": "",
+    "resume": null,
+    "displayInterval": 60,
+    "name": "learningResults/secondLearning",
+    "gpu": "1",
+    "optimizer": "adam",
+    "export": null,
+    "trainFrom": "-1",
+    "dataset": "Dataset/coco",
+    "mergeValidationSet": 1,
+    "profile": 0,
+    "randZoom": 1,
+    "cocoVariant": "2014",
+    "adamEps": 1e-08,
+    "reportInterval": 30,
+    "freezeBatchNorm": 1,
+    "hardMining": 1,
+    "saveInterval": 10000,
+    "learningRate": 0.001
+}

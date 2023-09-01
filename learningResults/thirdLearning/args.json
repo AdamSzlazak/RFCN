@@ -1,0 +1,21 @@
+{
+    "profile": 0,
+    "reportInterval": 30,
+    "freezeBatchNorm": 1,
+    "dataset": "Dataset/coco",
+    "displayInterval": 60,
+    "learningRate": 1e-05,
+    "export": null,
+    "report": "",
+    "cocoVariant": "2014",
+    "trainFrom": "-1",
+    "mergeValidationSet": 1,
+    "adamEps": 1e-08,
+    "resume": null,
+    "name": "learningResults/thirdLearning",
+    "hardMining": 1,
+    "optimizer": "adam",
+    "saveInterval": 10000,
+    "gpu": "1",
+    "randZoom": 0
+}

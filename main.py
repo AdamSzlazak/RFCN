@@ -22,7 +22,7 @@ import sys
 import os
 
 parser = StorableArgparse(description='RFCN trainer.')
-parser.add_argument('-learningRate', type=float, default=0.0001, help='Learning rate')
+parser.add_argument('-learningRate', type=float, default=0.00001, help='Learning rate')
 parser.add_argument('-adamEps', type=float, default=1e-8, help='Adam epsilon')
 parser.add_argument('-dataset', type=str, default="/data/Datasets/COCO", help="Path to COCO dataset")
 parser.add_argument('-name', type=str, default="save", help="Directory to save checkpoints")
@@ -37,7 +37,7 @@ parser.add_argument('-hardMining', type=int, default=1, help="Enable hard exampl
 parser.add_argument('-gpu', type=str, default="1", help='Train on this GPU(s)')
 parser.add_argument('-mergeValidationSet', type=int, default=1, help='Merge validation set to training set.')
 parser.add_argument('-profile', type=int, default=0, help='Enable profiling', save=False)
-parser.add_argument('-randZoom', type=int, default=1, help='Enable box aware random zooming and cropping')
+parser.add_argument('-randZoom', type=int, default=0, help='Enable box aware random zooming and cropping')
 parser.add_argument('-freezeBatchNorm', type=int, default=1, help='Freeze batch normalization during finetuning.')
 parser.add_argument('-export', type=str, help='Export model here.', save=False)
 parser.add_argument('-cocoVariant', type=str, default="2014", help='Coco variant to load. 2014 or 2017')
