@@ -24,7 +24,7 @@ import os
 parser = StorableArgparse(description='RFCN trainer.')
 parser.add_argument('-learningRate', type=float, default=0.00001, help='Learning rate')
 parser.add_argument('-adamEps', type=float, default=1e-8, help='Adam epsilon')
-parser.add_argument('-dataset', type=str, default="/data/Datasets/COCO", help="Path to COCO dataset")
+parser.add_argument('-dataset', type=str, default="/Datasets/COCO", help="Path to COCO dataset")
 parser.add_argument('-name', type=str, default="save", help="Directory to save checkpoints")
 parser.add_argument('-saveInterval', type=int, default=10000, help='Save model for this amount of iterations')
 parser.add_argument('-reportInterval', type=int, default=30, help='Repeat after this amount of iterations')
