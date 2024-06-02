@@ -1,0 +1,21 @@
+{
+    "hardMining": 1,
+    "dataset": "Dataset/coco/",
+    "randZoom": 0,
+    "name": "learningResults/sixthLearning",
+    "profile": 0,
+    "resume": null,
+    "optimizer": "adam",
+    "mergeValidationSet": 1,
+    "displayInterval": 60,
+    "export": null,
+    "trainFrom": "-1",
+    "report": "",
+    "learningRate": 1e-05,
+    "cocoVariant": "2014",
+    "freezeBatchNorm": 1,
+    "gpu": "1",
+    "saveInterval": 10000,
+    "adamEps": 1e-08,
+    "reportInterval": 30
+}

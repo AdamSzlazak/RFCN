@@ -1,0 +1,21 @@
+{
+    "dataset": "Dataset/coco/",
+    "saveInterval": 10000,
+    "reportInterval": 30,
+    "freezeBatchNorm": 1,
+    "randZoom": 1,
+    "profile": 1,
+    "optimizer": "adam",
+    "hardMining": 1,
+    "trainFrom": "-1",
+    "adamEps": 1e-08,
+    "learningRate": 1e-05,
+    "mergeValidationSet": 1,
+    "displayInterval": 60,
+    "cocoVariant": "2014",
+    "name": "learningResultseightLearning",
+    "gpu": "1",
+    "report": "",
+    "export": null,
+    "resume": null
+}
